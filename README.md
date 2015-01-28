@@ -54,4 +54,4 @@ That's it! Have fun with EventLogger!
 
 ## ScreenShot
 
-![ScreenShot1](ScreenShot/ScreenShot1.jpg)
+![ScreenShot1](ScreenShot/ScreenShot1.JPG)
