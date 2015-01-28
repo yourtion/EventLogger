@@ -15,6 +15,7 @@
 		CB7C43921A78AAA500C8E1C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB7C43901A78AAA500C8E1C5 /* LaunchScreen.xib */; };
 		CB7C439E1A78AAA500C8E1C5 /* EventLoggerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7C439D1A78AAA500C8E1C5 /* EventLoggerDemoTests.m */; };
 		CB7C43AA1A78AAAF00C8E1C5 /* EventLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7C43A91A78AAAF00C8E1C5 /* EventLogger.m */; };
+		CBD0DF921A78B863001A6F26 /* EventLoggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DF911A78B863001A6F26 /* EventLoggerTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		CB7C439D1A78AAA500C8E1C5 /* EventLoggerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventLoggerDemoTests.m; sourceTree = "<group>"; };
 		CB7C43A81A78AAAF00C8E1C5 /* EventLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLogger.h; sourceTree = "<group>"; };
 		CB7C43A91A78AAAF00C8E1C5 /* EventLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLogger.m; sourceTree = "<group>"; };
+		CBD0DF911A78B863001A6F26 /* EventLoggerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLoggerTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		CB7C439A1A78AAA500C8E1C5 /* EventLoggerDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				CBD0DF911A78B863001A6F26 /* EventLoggerTest.m */,
 				CB7C439D1A78AAA500C8E1C5 /* EventLoggerDemoTests.m */,
 				CB7C439B1A78AAA500C8E1C5 /* Supporting Files */,
 			);
@@ -244,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD0DF921A78B863001A6F26 /* EventLoggerTest.m in Sources */,
 				CB7C439E1A78AAA500C8E1C5 /* EventLoggerDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +431,7 @@
 				CB7C43A31A78AAA500C8E1C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB7C43A41A78AAA500C8E1C5 /* Build configuration list for PBXNativeTarget "EventLoggerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +440,7 @@
 				CB7C43A61A78AAA500C8E1C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
