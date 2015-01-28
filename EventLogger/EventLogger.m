@@ -46,7 +46,6 @@
 - (void)addCountEventWithTag:(NSString *)tag
 {
     NSNumber *count = [_countEventList objectForKey:tag];
-    NSLog(@"%@ count: %@", tag, count);
     if (count) {
         NSInteger number = [count integerValue];
         number+=1;
@@ -54,7 +53,6 @@
     }else{
         [_countEventList setObject:[NSNumber numberWithInteger:1] forKey:tag];
     }
-    NSLog(@"_countEventList %@", _countEventList);
 }
 
 - (void)startTimeEventWithTag:(NSString *)tag andInfo:(NSDictionary *)info
@@ -63,7 +61,6 @@
     NSMutableDictionary *allInfo = [[NSMutableDictionary alloc]initWithDictionary:[_timeEventList objectForKey:tag] copyItems:YES];
     [allInfo addEntriesFromDictionary:info];
     [_timeEventList setObject:allInfo forKey:tag];
-    NSLog(@"_timeEventList %@", _timeEventList);
 }
 
 - (void)addTimeEventPoint:(NSString *)point withTag:(NSString *)tag andInfo:(NSDictionary *)info timeFromPoint:(NSString *)fromPoint
@@ -79,7 +76,6 @@
         [allInfo setObject:time forKey:point];
     }
     [_timeEventList setObject:allInfo forKey:tag];
-    NSLog(@"_timeEventList %@", _timeEventList);
 }
 
 -(NSArray *)getEventArray
