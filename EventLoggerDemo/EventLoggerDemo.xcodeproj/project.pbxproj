@@ -13,7 +13,6 @@
 		CB7C438D1A78AAA500C8E1C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7C438B1A78AAA500C8E1C5 /* Main.storyboard */; };
 		CB7C438F1A78AAA500C8E1C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7C438E1A78AAA500C8E1C5 /* Images.xcassets */; };
 		CB7C43921A78AAA500C8E1C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB7C43901A78AAA500C8E1C5 /* LaunchScreen.xib */; };
-		CB7C439E1A78AAA500C8E1C5 /* EventLoggerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7C439D1A78AAA500C8E1C5 /* EventLoggerDemoTests.m */; };
 		CB7C43AA1A78AAAF00C8E1C5 /* EventLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7C43A91A78AAAF00C8E1C5 /* EventLogger.m */; };
 		CBD0DF921A78B863001A6F26 /* EventLoggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DF911A78B863001A6F26 /* EventLoggerTest.m */; };
 /* End PBXBuildFile section */
@@ -41,7 +40,6 @@
 		CB7C43911A78AAA500C8E1C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CB7C43971A78AAA500C8E1C5 /* EventLoggerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventLoggerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7C439C1A78AAA500C8E1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB7C439D1A78AAA500C8E1C5 /* EventLoggerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventLoggerDemoTests.m; sourceTree = "<group>"; };
 		CB7C43A81A78AAAF00C8E1C5 /* EventLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLogger.h; sourceTree = "<group>"; };
 		CB7C43A91A78AAAF00C8E1C5 /* EventLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLogger.m; sourceTree = "<group>"; };
 		CBD0DF911A78B863001A6F26 /* EventLoggerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLoggerTest.m; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				CBD0DF911A78B863001A6F26 /* EventLoggerTest.m */,
-				CB7C439D1A78AAA500C8E1C5 /* EventLoggerDemoTests.m */,
 				CB7C439B1A78AAA500C8E1C5 /* Supporting Files */,
 			);
 			path = EventLoggerDemoTests;
@@ -248,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBD0DF921A78B863001A6F26 /* EventLoggerTest.m in Sources */,
-				CB7C439E1A78AAA500C8E1C5 /* EventLoggerDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

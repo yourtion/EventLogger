@@ -68,13 +68,13 @@
     [_timeList setObject:[NSDate date] forKey:[NSString stringWithFormat:@"%@_%@",tag, point]];
     NSMutableDictionary *allInfo = [[NSMutableDictionary alloc]initWithDictionary:[_timeEventList objectForKey:tag] copyItems:YES];
     [allInfo addEntriesFromDictionary:info];
+    NSNumber *time;
     if (fromPoint) {
-        NSNumber *time = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceDate:[_timeList objectForKey:[NSString stringWithFormat:@"%@_%@",tag, fromPoint]]]];
-        [allInfo setObject:time forKey:point];
+        time = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceDate:[_timeList objectForKey:[NSString stringWithFormat:@"%@_%@",tag, fromPoint]]]];
     }else{
-        NSNumber *time = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceDate:[_timeList objectForKey:tag]]];
-        [allInfo setObject:time forKey:point];
+        time = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceDate:[_timeList objectForKey:tag]]];
     }
+    [allInfo setObject:time forKey:point];
     [_timeEventList setObject:allInfo forKey:tag];
 }
 
