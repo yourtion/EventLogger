@@ -46,7 +46,7 @@ Loging `EventCount2` time from event begining;
 [[EventLogger sharedInstance] addTimeEventPoint:@"e12" withTag:@"TimeEven1" andInfo:nil timeFromPoint:@nil];
 ```
 
-Loging `EventCount2` time from point `e13`;
+Loging `EventCount2` time from point `e12`;
 
 ```objective-c
 [[EventLogger sharedInstance] addTimeEventPoint:@"e13" withTag:@"TimeEven1" andInfo:nil timeFromPoint:@"e12"];
