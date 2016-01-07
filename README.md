@@ -3,6 +3,7 @@ EventLogger
 [![Version](https://img.shields.io/cocoapods/v/EventLogger.svg?style=flat)](http://cocoapods.org/pods/SuperID)
 [![License](https://img.shields.io/cocoapods/l/EventLogger.svg?style=flat)](http://cocoapods.org/pods/SuperID)
 [![Platform](https://img.shields.io/cocoapods/p/EventLogger.svg?style=flat)](http://cocoapods.org/pods/SuperID)
+[![Build Status](https://travis-ci.org/yourtion/EventLogger.svg)](https://travis-ci.org/yourtion/EventLogger)
 
 Log event count and event time in iOS
 
