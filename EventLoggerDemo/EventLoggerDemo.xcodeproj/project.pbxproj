@@ -14,18 +14,7 @@
 		CB7C438F1A78AAA500C8E1C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7C438E1A78AAA500C8E1C5 /* Images.xcassets */; };
 		CB7C43921A78AAA500C8E1C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB7C43901A78AAA500C8E1C5 /* LaunchScreen.xib */; };
 		CB7C43AA1A78AAAF00C8E1C5 /* EventLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7C43A91A78AAAF00C8E1C5 /* EventLogger.m */; };
-		CBD0DF921A78B863001A6F26 /* EventLoggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DF911A78B863001A6F26 /* EventLoggerTest.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CB7C43981A78AAA500C8E1C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB7C43761A78AAA500C8E1C5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB7C437D1A78AAA500C8E1C5;
-			remoteInfo = EventLoggerDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CB7C437E1A78AAA500C8E1C5 /* EventLoggerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventLoggerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,22 +27,12 @@
 		CB7C438C1A78AAA500C8E1C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB7C438E1A78AAA500C8E1C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB7C43911A78AAA500C8E1C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		CB7C43971A78AAA500C8E1C5 /* EventLoggerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventLoggerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB7C439C1A78AAA500C8E1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB7C43A81A78AAAF00C8E1C5 /* EventLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLogger.h; sourceTree = "<group>"; };
 		CB7C43A91A78AAAF00C8E1C5 /* EventLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLogger.m; sourceTree = "<group>"; };
-		CBD0DF911A78B863001A6F26 /* EventLoggerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLoggerTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CB7C437B1A78AAA500C8E1C5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB7C43941A78AAA500C8E1C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,7 +47,6 @@
 			children = (
 				CB7C43A71A78AAAF00C8E1C5 /* EventLogger */,
 				CB7C43801A78AAA500C8E1C5 /* EventLoggerDemo */,
-				CB7C439A1A78AAA500C8E1C5 /* EventLoggerDemoTests */,
 				CB7C437F1A78AAA500C8E1C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				CB7C437E1A78AAA500C8E1C5 /* EventLoggerDemo.app */,
-				CB7C43971A78AAA500C8E1C5 /* EventLoggerDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,23 +79,6 @@
 			children = (
 				CB7C43821A78AAA500C8E1C5 /* Info.plist */,
 				CB7C43831A78AAA500C8E1C5 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CB7C439A1A78AAA500C8E1C5 /* EventLoggerDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				CBD0DF911A78B863001A6F26 /* EventLoggerTest.m */,
-				CB7C439B1A78AAA500C8E1C5 /* Supporting Files */,
-			);
-			path = EventLoggerDemoTests;
-			sourceTree = "<group>";
-		};
-		CB7C439B1A78AAA500C8E1C5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CB7C439C1A78AAA500C8E1C5 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -153,24 +113,6 @@
 			productReference = CB7C437E1A78AAA500C8E1C5 /* EventLoggerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CB7C43961A78AAA500C8E1C5 /* EventLoggerDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB7C43A41A78AAA500C8E1C5 /* Build configuration list for PBXNativeTarget "EventLoggerDemoTests" */;
-			buildPhases = (
-				CB7C43931A78AAA500C8E1C5 /* Sources */,
-				CB7C43941A78AAA500C8E1C5 /* Frameworks */,
-				CB7C43951A78AAA500C8E1C5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CB7C43991A78AAA500C8E1C5 /* PBXTargetDependency */,
-			);
-			name = EventLoggerDemoTests;
-			productName = EventLoggerDemoTests;
-			productReference = CB7C43971A78AAA500C8E1C5 /* EventLoggerDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,10 +124,6 @@
 				TargetAttributes = {
 					CB7C437D1A78AAA500C8E1C5 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					CB7C43961A78AAA500C8E1C5 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = CB7C437D1A78AAA500C8E1C5;
 					};
 				};
 			};
@@ -203,7 +141,6 @@
 			projectRoot = "";
 			targets = (
 				CB7C437D1A78AAA500C8E1C5 /* EventLoggerDemo */,
-				CB7C43961A78AAA500C8E1C5 /* EventLoggerDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +153,6 @@
 				CB7C438D1A78AAA500C8E1C5 /* Main.storyboard in Resources */,
 				CB7C43921A78AAA500C8E1C5 /* LaunchScreen.xib in Resources */,
 				CB7C438F1A78AAA500C8E1C5 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB7C43951A78AAA500C8E1C5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,23 +170,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB7C43931A78AAA500C8E1C5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CBD0DF921A78B863001A6F26 /* EventLoggerTest.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CB7C43991A78AAA500C8E1C5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB7C437D1A78AAA500C8E1C5 /* EventLoggerDemo */;
-			targetProxy = CB7C43981A78AAA500C8E1C5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CB7C438B1A78AAA500C8E1C5 /* Main.storyboard */ = {
@@ -377,42 +291,6 @@
 			};
 			name = Release;
 		};
-		CB7C43A51A78AAA500C8E1C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = EventLoggerDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "yourtion.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventLoggerDemo.app/EventLoggerDemo";
-			};
-			name = Debug;
-		};
-		CB7C43A61A78AAA500C8E1C5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = EventLoggerDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "yourtion.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventLoggerDemo.app/EventLoggerDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -430,15 +308,6 @@
 			buildConfigurations = (
 				CB7C43A21A78AAA500C8E1C5 /* Debug */,
 				CB7C43A31A78AAA500C8E1C5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB7C43A41A78AAA500C8E1C5 /* Build configuration list for PBXNativeTarget "EventLoggerDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB7C43A51A78AAA500C8E1C5 /* Debug */,
-				CB7C43A61A78AAA500C8E1C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

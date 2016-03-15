@@ -1,2 +1,2 @@
 language: objective-c
-script: xctool -project EventLoggerDemo/EventLoggerDemo.xcodeproj -scheme EventLoggerDemo  -sdk iphonesimulator test
+script: xctool -project EventLogger.xcodeproj -scheme EventLogger -sdk iphonesimulator test
