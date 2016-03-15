@@ -1,2 +1,5 @@
 language: objective-c
+before_install:
+  - brew update
+  - brew outdated xctool || brew upgrade xctool
 script: xctool -project EventLogger.xcodeproj -scheme EventLogger -sdk iphonesimulator test
