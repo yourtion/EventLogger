@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "EventLogger"
-  s.version      = "0.4.0"
+  s.version      = "0.5.0"
   s.summary      = "Log event count and event time in iOS."
 
   s.description  = <<-DESC
