@@ -15,17 +15,26 @@
 @end
 
 @implementation EventLogger
+
+- (instancetype)init
+{
+    @throw [NSException exceptionWithName:@"Do not init EventLogger"
+                                   reason:@"You should use [EventLogger sharedInstance]"
+                                 userInfo:nil];
+    return nil;
+}
+
 + (EventLogger *)sharedInstance
 {
     static EventLogger*_sharedInstance = nil;
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
-        _sharedInstance = [[EventLogger alloc] init];
+        _sharedInstance = [[EventLogger alloc] initPrivate];
     });
     return _sharedInstance;
 }
 
-- (instancetype)init
+- (instancetype)initPrivate
 {
     self = [super init];
     if (self) {
