@@ -14,23 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB7C437D1A78AAA500C8E1C5"
-               BuildableName = "EventLoggerDemo.app"
-               BlueprintName = "EventLoggerDemo"
-               ReferencedContainer = "container:EventLoggerDemo.xcodeproj">
+               BlueprintIdentifier = "CB3D16001C81590A00A03D38"
+               BuildableName = "EventLogger.framework"
+               BlueprintName = "EventLogger"
+               ReferencedContainer = "container:../EventLogger.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB7C43961A78AAA500C8E1C5"
-               BuildableName = "EventLoggerDemoTests.xctest"
-               BlueprintName = "EventLoggerDemoTests"
+               BlueprintIdentifier = "CB7C437D1A78AAA500C8E1C5"
+               BuildableName = "EventLoggerDemo.app"
+               BlueprintName = "EventLoggerDemo"
                ReferencedContainer = "container:EventLoggerDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,16 +43,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB7C43961A78AAA500C8E1C5"
-               BuildableName = "EventLoggerDemoTests.xctest"
-               BlueprintName = "EventLoggerDemoTests"
-               ReferencedContainer = "container:EventLoggerDemo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

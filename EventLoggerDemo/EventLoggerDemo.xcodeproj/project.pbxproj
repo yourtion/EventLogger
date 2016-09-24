@@ -13,8 +13,23 @@
 		CB7C438D1A78AAA500C8E1C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7C438B1A78AAA500C8E1C5 /* Main.storyboard */; };
 		CB7C438F1A78AAA500C8E1C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7C438E1A78AAA500C8E1C5 /* Images.xcassets */; };
 		CB7C43921A78AAA500C8E1C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB7C43901A78AAA500C8E1C5 /* LaunchScreen.xib */; };
-		CB7C43AA1A78AAAF00C8E1C5 /* EventLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7C43A91A78AAAF00C8E1C5 /* EventLogger.m */; };
+		CB7E82AA1D16A87900767E10 /* EventLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7E82A91D16A87900767E10 /* EventLogger.framework */; };
+		CB7E82AB1D16A87900767E10 /* EventLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB7E82A91D16A87900767E10 /* EventLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB7E82AC1D16A87A00767E10 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB7E82AB1D16A87900767E10 /* EventLogger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CB7C437E1A78AAA500C8E1C5 /* EventLoggerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventLoggerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,8 +42,7 @@
 		CB7C438C1A78AAA500C8E1C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB7C438E1A78AAA500C8E1C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB7C43911A78AAA500C8E1C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		CB7C43A81A78AAAF00C8E1C5 /* EventLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLogger.h; sourceTree = "<group>"; };
-		CB7C43A91A78AAAF00C8E1C5 /* EventLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLogger.m; sourceTree = "<group>"; };
+		CB7E82A91D16A87900767E10 /* EventLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = EventLogger.framework; path = "/Users/Yourtion/Library/Developer/Xcode/DerivedData/EventLogger-fopodzhjodrphodkgxwqsgiyipch/Build/Products/Debug-iphonesimulator/EventLogger.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7E82AA1D16A87900767E10 /* EventLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +60,7 @@
 		CB7C43751A78AAA500C8E1C5 = {
 			isa = PBXGroup;
 			children = (
-				CB7C43A71A78AAAF00C8E1C5 /* EventLogger */,
+				CB7E82A91D16A87900767E10 /* EventLogger.framework */,
 				CB7C43801A78AAA500C8E1C5 /* EventLoggerDemo */,
 				CB7C437F1A78AAA500C8E1C5 /* Products */,
 			);
@@ -83,16 +98,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CB7C43A71A78AAAF00C8E1C5 /* EventLogger */ = {
-			isa = PBXGroup;
-			children = (
-				CB7C43A81A78AAAF00C8E1C5 /* EventLogger.h */,
-				CB7C43A91A78AAAF00C8E1C5 /* EventLogger.m */,
-			);
-			name = EventLogger;
-			path = ../EventLogger;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +108,7 @@
 				CB7C437A1A78AAA500C8E1C5 /* Sources */,
 				CB7C437B1A78AAA500C8E1C5 /* Frameworks */,
 				CB7C437C1A78AAA500C8E1C5 /* Resources */,
+				CB7E82AC1D16A87A00767E10 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,7 +171,6 @@
 			files = (
 				CB7C438A1A78AAA500C8E1C5 /* ViewController.m in Sources */,
 				CB7C43871A78AAA500C8E1C5 /* AppDelegate.m in Sources */,
-				CB7C43AA1A78AAAF00C8E1C5 /* EventLogger.m in Sources */,
 				CB7C43841A78AAA500C8E1C5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

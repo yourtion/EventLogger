@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "EventLogger.h"
+#import <EventLogger/EventLogger.h>
 
 @interface ViewController ()
 
