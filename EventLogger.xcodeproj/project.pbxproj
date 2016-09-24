@@ -11,7 +11,6 @@
 		CB3D160C1C81590B00A03D38 /* EventLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3D16011C81590A00A03D38 /* EventLogger.framework */; };
 		CB3D16111C81590B00A03D38 /* EventLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3D16101C81590B00A03D38 /* EventLoggerTests.m */; };
 		CB3D161C1C81596900A03D38 /* EventLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3D161B1C81596900A03D38 /* EventLogger.m */; };
-		CB60E9A51D96DE1200213C9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB60E9A41D96DE1200213C9B /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB60E9A51D96DE1200213C9B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
