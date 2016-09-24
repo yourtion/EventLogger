@@ -11,6 +11,7 @@
 		CB3D160C1C81590B00A03D38 /* EventLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3D16011C81590A00A03D38 /* EventLogger.framework */; };
 		CB3D16111C81590B00A03D38 /* EventLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3D16101C81590B00A03D38 /* EventLoggerTests.m */; };
 		CB3D161C1C81596900A03D38 /* EventLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3D161B1C81596900A03D38 /* EventLogger.m */; };
+		CB60E9A51D96DE1200213C9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB60E9A41D96DE1200213C9B /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		CB3D16101C81590B00A03D38 /* EventLoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventLoggerTests.m; sourceTree = "<group>"; };
 		CB3D16121C81590B00A03D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB3D161B1C81596900A03D38 /* EventLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLogger.m; sourceTree = "<group>"; };
+		CB60E9A41D96DE1200213C9B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB60E9A51D96DE1200213C9B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 				CB3D16031C81590A00A03D38 /* EventLogger */,
 				CB3D160F1C81590B00A03D38 /* EventLoggerTests */,
 				CB3D16021C81590A00A03D38 /* Products */,
+				CB60E9A31D96DE1200213C9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +91,14 @@
 				CB3D16121C81590B00A03D38 /* Info.plist */,
 			);
 			path = EventLoggerTests;
+			sourceTree = "<group>";
+		};
+		CB60E9A31D96DE1200213C9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB60E9A41D96DE1200213C9B /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
