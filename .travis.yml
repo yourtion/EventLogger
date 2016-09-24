@@ -14,7 +14,5 @@ env:
 
 script:
   - set -o pipefail
+  - FASTLANE_EXPLICIT_OPEN_SIMULATOR=2 travis_retry fastlane test
   - xcodebuild test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration $CONFIG | xcpretty -c;
-
-after_success:
-  - sleep 5
