@@ -14,4 +14,7 @@ env:
 
 script:
   - set -o pipefail
-  - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration $CONFIG test | xcpretty -c;
+  - xcodebuild test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration $CONFIG | xcpretty -c;
+
+after_success:
+  - sleep 5
