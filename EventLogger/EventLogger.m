@@ -64,25 +64,37 @@
     }
 }
 
+- (void)startTimeEventWithTag:(NSString *)tag
+{
+    [self startTimeEventWithTag:tag andInfo:nil];
+}
+
 - (void)startTimeEventWithTag:(NSString *)tag andInfo:(NSDictionary *)info
 {
     [_timeList setObject:[NSDate date] forKey:tag];
     NSMutableDictionary *allInfo = [[NSMutableDictionary alloc]initWithDictionary:[_timeEventList objectForKey:tag] copyItems:YES];
-    [allInfo addEntriesFromDictionary:info];
+    if (info) [allInfo addEntriesFromDictionary:info];
     [_timeEventList setObject:allInfo forKey:tag];
+}
+
+- (void)addTimeEventPoint:(NSString *)point withTag:(NSString *)tag
+{
+    [self addTimeEventPoint:point withTag:tag andInfo:nil timeFromPoint:nil];
 }
 
 - (void)addTimeEventPoint:(NSString *)point withTag:(NSString *)tag andInfo:(NSDictionary *)info timeFromPoint:(NSString *)fromPoint
 {
     [_timeList setObject:[NSDate date] forKey:[NSString stringWithFormat:@"%@_%@",tag, point]];
-    NSMutableDictionary *allInfo = [[NSMutableDictionary alloc]initWithDictionary:[_timeEventList objectForKey:tag] copyItems:YES];
-    [allInfo addEntriesFromDictionary:info];
+    
     NSNumber *time;
     if (fromPoint) {
         time = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceDate:[_timeList objectForKey:[NSString stringWithFormat:@"%@_%@",tag, fromPoint]]]];
-    }else{
+    } else {
         time = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceDate:[_timeList objectForKey:tag]]];
     }
+    
+    NSMutableDictionary *allInfo = [[NSMutableDictionary alloc]initWithDictionary:[_timeEventList objectForKey:tag] copyItems:YES];
+    if (info) [allInfo addEntriesFromDictionary:info];
     [allInfo setObject:time forKey:point];
     [_timeEventList setObject:allInfo forKey:tag];
 }

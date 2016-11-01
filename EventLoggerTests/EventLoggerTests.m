@@ -28,16 +28,20 @@
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
+- (void)testInitError {
+    XCTAssertThrows([[EventLogger alloc] init]);
+}
+
 - (void)testCleanAll {
     [_logger addCountEventWithTag:C1];
-    [_logger startTimeEventWithTag:T1 andInfo:nil];
+    [_logger startTimeEventWithTag:T1 andInfo:@{T2: T3}];
     [_logger cleanAll];
     XCTAssertEqual([_logger.countEventList count], 0);
     XCTAssertEqual([_logger.timeEventList count], 0);
 }
 
 - (void)testGetEventArray{
-    [_logger startTimeEventWithTag:T1 andInfo:nil];
+    [_logger startTimeEventWithTag:T1];
     NSArray *a = [_logger getEventArray];
     XCTAssertEqual([a count], 1);
     NSDictionary *d = a[0];
@@ -60,14 +64,14 @@
     [_logger cleanAll];
     XCTAssertEqualObjects([_logger.timeEventList objectForKey:T1], nil);
     
-    [_logger startTimeEventWithTag:T1 andInfo:nil];
+    [_logger startTimeEventWithTag:T1];
     XCTAssertNotEqualObjects([_logger.timeEventList objectForKey:T1], nil);
     
-    [_logger addTimeEventPoint:C1 withTag:T1 andInfo:nil timeFromPoint:nil];
+    [_logger addTimeEventPoint:C1 withTag:T1];
     XCTAssertGreaterThan([[[_logger.timeEventList objectForKey:T1] objectForKey:C1] floatValue],0);
     
     [_logger addTimeEventPoint:C2 withTag:T1 andInfo:nil timeFromPoint:C1];
-    [_logger addTimeEventPoint:C3 withTag:T1 andInfo:nil timeFromPoint:nil];
+    [_logger addTimeEventPoint:C3 withTag:T1];
     XCTAssertLessThan([[[_logger.timeEventList objectForKey:T1] objectForKey:C2] floatValue],
                       [[[_logger.timeEventList objectForKey:T1] objectForKey:C3] floatValue]);
 }

@@ -42,6 +42,12 @@
  *  Start a time event
  *
  *  @param tag  Event tag to identify an event
+ */
+- (void)startTimeEventWithTag:(NSString *)tag;
+/**
+ *  Start a time event
+ *
+ *  @param tag  Event tag to identify an event
  *  @param info Addtion info dictionary
  */
 - (void)startTimeEventWithTag:(NSString *)tag andInfo:(NSDictionary *)info;
@@ -51,8 +57,16 @@
  *
  *  @param point     Event point to identify an event check point
  *  @param tag       Event tag to identify an event
+ */
+- (void)addTimeEventPoint:(NSString *)point withTag:(NSString *)tag;
+/**
+ *  Add a time point to time event with tag
+ *
+ *  @param point     Event point to identify an event check point
+ *  @param tag       Event tag to identify an event
  *  @param info      Addtion info dictionary
  *  @param fromPoint Is event time count from a particular event point
  */
 - (void)addTimeEventPoint:(NSString *)point withTag:(NSString *)tag andInfo:(NSDictionary *)info timeFromPoint:(NSString *)fromPoint;
+
 @end
