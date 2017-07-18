@@ -7,8 +7,8 @@ env:
     - IOS_SCHEME=EventLogger
     - CONFIG="Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES"
   matrix:
-    - SCHEME="$IOS_SCHEME" SDK="$IOS_SDK" DESTINATION="OS=9.0, name=iPhone 5"
-    - SCHEME="$IOS_SCHEME" SDK="$IOS_SDK" DESTINATION="OS=10.3.1, name=iPhone 7 Plus"
+    - SCHEME="$IOS_SCHEME" SDK="$IOS_SDK" DESTINATION="OS=9.0,name=iPhone 5"
+    - SCHEME="$IOS_SCHEME" SDK="$IOS_SDK" DESTINATION="OS=10.3.1,name=iPhone 7 Plus"
 
 before_install:
   - brew update
@@ -16,5 +16,5 @@ before_install:
 
 script:
   - set -o pipefail
-  - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c;
   - xcodebuild test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk iphonesimulator -destination "$DESTINATION" -configuration $CONFIG | xcpretty -c;
